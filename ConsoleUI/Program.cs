@@ -20,6 +20,13 @@ namespace ConsoleUI
                 Console.WriteLine(product.ProductName);
             }
 
+
+            Console.WriteLine("********************************");
+
+            foreach (var product in productManager.GetAllByCategoryId(2))
+            {
+                Console.WriteLine(product.ProductName + "\t" + product.CategoryID);
+            }
             
         }
     }
