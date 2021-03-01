@@ -1,5 +1,6 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace DataAccess.Concrete.InMemory
         {
 
             //Oracla, Sql Server, Postgres, MongoDb
-            _products = new List<Product> { 
+            _products = new List<Product> {
                 new Product{ ProductID = 1, CategoryID = 1, ProductName = "Bardak", UnitPrice = 15, UnitsInStock = 15},
                 new Product{ ProductID = 2, CategoryID = 1, ProductName = "Kamera", UnitPrice = 500, UnitsInStock = 3},
                 new Product{ ProductID = 3, CategoryID = 2, ProductName = "Telefon", UnitPrice = 1500, UnitsInStock = 2},
@@ -83,6 +84,9 @@ namespace DataAccess.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-
+        public List<ProductDetailDto> GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
