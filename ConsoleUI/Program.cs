@@ -13,6 +13,7 @@ namespace ConsoleUI
         {
             ProductTest();
             // IoC ?? ne demek araştır  //DTO -> Data Transformation Object
+
             //CategoryTest();
 
         }
