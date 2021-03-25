@@ -8,7 +8,7 @@ namespace Business.Abstract
 {
     public interface ICategoryService
     {
-        DataResult<List<Category>> GetAll();
-        DataResult<Category> GetById(int categoryId);
+        IDataResult<List<Category>> GetAll();
+        IDataResult<Category> GetById(int categoryId);
     }
 }
