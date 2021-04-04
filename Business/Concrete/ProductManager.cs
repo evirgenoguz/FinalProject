@@ -54,6 +54,8 @@ namespace Business.Concrete
 
         }
 
+        [CacheAspect] //key, value
+        //alttaki kod çalışınca cacheden hızlıca çağırmak için
         public IDataResult<List<Product>> GetAll()
         {
             //İş Kodları
