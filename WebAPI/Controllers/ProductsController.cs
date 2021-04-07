@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
@@ -29,6 +30,9 @@ namespace WebAPI.Controllers
         {
             //Swagger 
             //Dependency Chain -- product servise product managera bağımlı o da efproductdal a
+
+            //Thread.Sleep(3000);
+
             var result = _productService.GetAll();
             if (result.Success)
             {

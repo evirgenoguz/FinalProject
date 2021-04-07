@@ -63,10 +63,10 @@ namespace Business.Concrete
         {
             //İş Kodları
             //Yetkisi Var mı? vs vs kodları
-            if (DateTime.Now.Hour == 0)
-            {
-                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
-            }
+            //if (DateTime.Now.Hour == 10)
+            //{
+            //    return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
+            //}
 
 
             return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.ProductsListed);
